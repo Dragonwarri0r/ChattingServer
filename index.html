@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"My web socket test chatting room"</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <h1>evt.data</h1>
+    <script type="text/javascript">
+        function WebScoketTest() {
+            if("WebSocket" in window||0) {
+                var ws = new WebScoket("ws://localhost:8765");//建立ws链接
+            }
+            else
+            alert("test");
+        }
+    </script>
+    <button type="button" onclick="WebScoketTest" ></button>
+</body>
+</html>
